@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[231],{2271:(_,a,e)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/aaa",function(){return e(5767)}])},5767:(_,a,e)=>{"use strict";e.r(a),e.d(a,{default:()=>s});var n=e(5105);let s=()=>(0,n.jsx)("h1",{children:"aa!!"})}},_=>{var a=a=>_(_.s=a);_.O(0,[636,593,792],()=>a(2271)),_N_E=_.O()}]);
