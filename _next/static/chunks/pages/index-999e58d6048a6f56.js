@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[332],{9364:(_,e,n)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/",function(){return n(6638)}])},6638:(_,e,n)=>{"use strict";n.r(e),n.d(e,{default:()=>u});var s=n(5105);let u=()=>(0,s.jsx)("h1",{children:"Sample!!!"})}},_=>{var e=e=>_(_.s=e);_.O(0,[636,593,792],()=>e(9364)),_N_E=_.O()}]);
