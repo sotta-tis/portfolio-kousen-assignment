@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Box, Flex, Link } from "@chakra-ui/react";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -124,6 +125,23 @@ const Header: React.FC = () => {
             _hover={{ textDecoration: "none", color: "orange.300" }}
           >
             Contact
+          </Link>
+        </Flex>
+
+        <Flex gap={4}>
+          <Link
+            href="https://github.com/sotta-tis"
+            color={isScrolled ? "navy.900" : "white"}
+            _hover={{ color: "orange.300" }}
+          >
+            <AiFillGithub size="24px" />
+          </Link>
+          <Link
+            href="https://instagram.com/sotta_tis"
+            color={isScrolled ? "navy.900" : "white"}
+            _hover={{ color: "orange.300" }}
+          >
+            <AiFillInstagram size="24px" />
           </Link>
         </Flex>
       </Flex>
