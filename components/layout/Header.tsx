@@ -3,6 +3,7 @@ import { Box, Flex, Link } from "@chakra-ui/react";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 
 const Header: React.FC = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
   const [isScrolled, setIsScrolled] = useState(false);
   const [scrollY, setScrollY] = useState(0);
 
@@ -43,7 +44,7 @@ const Header: React.FC = () => {
             transition="transform 0.1s linear"
           >
             <img
-              src="/gear.svg"
+              src={`${basePath}/gear.svg`}
               alt="Rotating gear 1"
               style={{
                 width: "100%",
@@ -62,7 +63,7 @@ const Header: React.FC = () => {
             transition="transform 0.1s linear"
           >
             <img
-              src="/gear.svg"
+              src={`${basePath}/gear.svg`}
               alt="Rotating gear 2"
               style={{
                 width: "100%",
@@ -81,7 +82,7 @@ const Header: React.FC = () => {
             transition="transform 0.1s linear"
           >
             <img
-              src="/gear.svg"
+              src={`${basePath}/gear.svg`}
               alt="Rotating gear 3"
               style={{
                 width: "100%",
