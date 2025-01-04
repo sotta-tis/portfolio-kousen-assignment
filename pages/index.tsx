@@ -199,7 +199,7 @@ const Home: React.FC = () => {
           <Box p="5">Skills</Box>
         </Button>
         <Button
-          onClick={() => router.push("/")}
+          onClick={() => router.push("/achievements")}
           w="80%"
           h="auto"
           borderRadius="5"
