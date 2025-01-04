@@ -35,6 +35,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       )}
 
       <Header />
+      <title>Sota Toshizumi Portfolio</title>
+      <meta name="description" content="Sota Toshziumi Portfolio" />
       <main className="flex-grow">{children}</main>
       <Footer />
     </div>

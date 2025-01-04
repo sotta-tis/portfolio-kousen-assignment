@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Box, Flex, Link } from "@chakra-ui/react";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { useRouter } from "next/router";
 
 const Header: React.FC = () => {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
   const [isScrolled, setIsScrolled] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,10 +42,14 @@ const Header: React.FC = () => {
         >
           {/* ナビゲーションリンク */}
           <Flex as="nav" gap={6}>
-            {["Home", "About", "Projects", "Contact"].map((item) => (
+            {["Top", "Skill", "Achievements"].map((item) => (
               <Link
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={
+                  item == "Top"
+                    ? `${basePath}/`
+                    : `${basePath}/${item.toLowerCase()}`
+                }
                 fontWeight="medium"
                 color={isScrolled ? "navy.900" : "white"}
                 _hover={{ textDecoration: "none", color: "orange.300" }}
