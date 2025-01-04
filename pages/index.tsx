@@ -152,12 +152,17 @@ const Home: React.FC = () => {
           </Box>
         </Box>
       </Box>
+
+      {/* もっと */}
       <Box
         bg="yellow.400"
         display="flex"
         flexDirection="column"
         alignItems="center"
         gap={4}
+        overflow="hidden"
+        flexWrap="wrap"
+        zIndex={2}
       >
         {/* タイトル */}
         <Box
@@ -183,25 +188,25 @@ const Home: React.FC = () => {
         {/* ボタン */}
         <Button
           onClick={() => router.push("/")}
-          w="60%"
+          w="80%"
           h="auto"
-          bg="purple.600"
           borderRadius="5"
           fontSize="4xl"
+          bg="green.600"
           color="white"
           _hover={{ bg: "orange.600" }}
         >
-          <Box p="3">
-            About Me
+          <Box p="5">
+            History・Skill
             <Box fontSize="lg" mt="5">
-              -趣味や好きなこと-
+              -経歴・できること-
             </Box>
           </Box>
         </Button>
         <Button
           onClick={() => router.push("/")}
-          w="60%"
-          h="5rem"
+          w="80%"
+          h="auto"
           borderRadius="5"
           fontSize="4xl"
           bg="blue.600"
@@ -210,7 +215,7 @@ const Home: React.FC = () => {
           overflow="wrap"
         >
           <Box p="3">
-            Achievements & Awards
+            Achievements
             <Box fontSize="lg" mt="5">
               -制作物・受賞歴-
             </Box>
@@ -218,18 +223,19 @@ const Home: React.FC = () => {
         </Button>
         <Button
           onClick={() => router.push("/")}
-          w="60%"
-          h="5rem"
+          w="80%"
+          h="auto"
+          bg="purple.600"
           borderRadius="5"
           fontSize="4xl"
-          bg="green.600"
           color="white"
           _hover={{ bg: "orange.600" }}
+          disabled
         >
-          <Box p="5">
-            History
+          <Box p="3">
+            About Me
             <Box fontSize="lg" mt="5">
-              -経歴-
+              -趣味や好きなこと-
             </Box>
           </Box>
         </Button>
