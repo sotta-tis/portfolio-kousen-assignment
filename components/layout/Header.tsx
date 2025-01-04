@@ -29,6 +29,7 @@ const Header: React.FC = () => {
         transition="background-color 0.3s, color 0.3s, box-shadow 0.3s"
         px={6}
         py={5}
+        zIndex={90}
       >
         <Flex
           justify="space-around"
