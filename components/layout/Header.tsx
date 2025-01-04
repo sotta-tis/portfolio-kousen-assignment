@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Box, Flex, Link } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 
 const Header: React.FC = () => {
@@ -35,44 +34,25 @@ const Header: React.FC = () => {
           justify="space-around"
           align="center"
           maxW="1200px"
-          wrap={"wrap"}
+          wrap="wrap"
           zIndex={120}
         >
+          {/* ナビゲーションリンク */}
           <Flex as="nav" gap={6}>
-            <Link
-              href="#home"
-              fontWeight="medium"
-              color={isScrolled ? "navy.900" : "white"}
-              _hover={{ textDecoration: "none", color: "orange.300" }}
-            >
-              Home
-            </Link>
-            <Link
-              href="#about"
-              fontWeight="medium"
-              color={isScrolled ? "navy.900" : "white"}
-              _hover={{ textDecoration: "none", color: "orange.300" }}
-            >
-              About
-            </Link>
-            <Link
-              href="#projects"
-              fontWeight="medium"
-              color={isScrolled ? "navy.900" : "white"}
-              _hover={{ textDecoration: "none", color: "orange.300" }}
-            >
-              Projects
-            </Link>
-            <Link
-              href="#contact"
-              fontWeight="medium"
-              color={isScrolled ? "navy.900" : "white"}
-              _hover={{ textDecoration: "none", color: "orange.300" }}
-            >
-              Contact
-            </Link>
+            {["Home", "About", "Projects", "Contact"].map((item) => (
+              <Link
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                fontWeight="medium"
+                color={isScrolled ? "navy.900" : "white"}
+                _hover={{ textDecoration: "none", color: "orange.300" }}
+              >
+                {item}
+              </Link>
+            ))}
           </Flex>
 
+          {/* アイコンリンク */}
           <Flex gap={4}>
             <Link
               href="https://github.com/sotta-tis"
@@ -91,8 +71,10 @@ const Header: React.FC = () => {
           </Flex>
         </Flex>
       </Box>
+
+      {/* ギアの回転 */}
       <Flex
-        position={"sticky"}
+        position="sticky"
         top={-8}
         justify="space-around"
         bg={isScrolled ? "rgba(255, 240, 220, 0.9)" : "rgba(10, 25, 47, 0.9)"}
