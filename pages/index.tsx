@@ -1,5 +1,6 @@
-import { Box, Center, Flex, Text, Image } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, Button } from "@chakra-ui/react";
 import { keyframes } from "@emotion/react";
+import { useRouter } from "next/router";
 
 // 回転アニメーションを定義
 const rotate = keyframes`
@@ -13,6 +14,7 @@ const rotate = keyframes`
 
 const Home: React.FC = () => {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
+  const router = useRouter();
   return (
     <Flex direction="column" w="100%" h="auto">
       {/* top */}
@@ -149,6 +151,93 @@ const Home: React.FC = () => {
             ></Image>
           </Box>
         </Box>
+      </Box>
+      <Box
+        bg="yellow.400"
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        gap={4}
+      >
+        {/* タイトル */}
+        <Box
+          colorScheme="blue"
+          justifyContent="center"
+          direction="column"
+          overflow="wrap"
+        >
+          <Text
+            mt="5"
+            textAlign="center"
+            fontSize="4xl"
+            fontWeight="bold"
+            color="black"
+          >
+            Detail
+          </Text>
+          <Text
+            textAlign="center"
+            fontSize="md"
+            fontWeight="bold"
+            color="black"
+          >
+            -　もっと詳しく　ー
+          </Text>
+        </Box>
+
+        {/* ボタン */}
+        <Button
+          onClick={() => router.push("/")}
+          w="60%"
+          h="auto"
+          bg="purple.600"
+          borderRadius="5"
+          fontSize="4xl"
+          color="white"
+          _hover={{ bg: "orange.600" }}
+        >
+          <Text p="3">
+            About Me
+            <Text fontSize="lg" mt="5">
+              -趣味や好きなこと-
+            </Text>
+          </Text>
+        </Button>
+        <Button
+          onClick={() => router.push("/")}
+          w="60%"
+          h="5rem"
+          borderRadius="5"
+          fontSize="4xl"
+          bg="blue.600"
+          color="white"
+          _hover={{ bg: "orange.600" }}
+          overflow="wrap"
+        >
+          <Text p="3">
+            Achievements & Awards
+            <Text fontSize="lg" mt="5">
+              -制作物・受賞歴-
+            </Text>
+          </Text>
+        </Button>
+        <Button
+          onClick={() => router.push("/")}
+          w="60%"
+          h="5rem"
+          borderRadius="5"
+          fontSize="4xl"
+          bg="green.600"
+          color="white"
+          _hover={{ bg: "orange.600" }}
+        >
+          <Text p="5">
+            History
+            <Text fontSize="lg" mt="5">
+              -経歴-
+            </Text>
+          </Text>
+        </Button>
       </Box>
     </Flex>
   );
