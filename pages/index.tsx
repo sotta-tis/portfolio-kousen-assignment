@@ -166,7 +166,7 @@ const Home: React.FC = () => {
           direction="column"
           overflow="wrap"
         >
-          <Text
+          <Box
             mt="5"
             textAlign="center"
             fontSize="4xl"
@@ -174,15 +174,10 @@ const Home: React.FC = () => {
             color="black"
           >
             Detail
-          </Text>
-          <Text
-            textAlign="center"
-            fontSize="md"
-            fontWeight="bold"
-            color="black"
-          >
+          </Box>
+          <Box textAlign="center" fontSize="md" fontWeight="bold" color="black">
             -　もっと詳しく　ー
-          </Text>
+          </Box>
         </Box>
 
         {/* ボタン */}
@@ -196,12 +191,12 @@ const Home: React.FC = () => {
           color="white"
           _hover={{ bg: "orange.600" }}
         >
-          <Text p="3">
+          <Box p="3">
             About Me
-            <Text fontSize="lg" mt="5">
+            <Box fontSize="lg" mt="5">
               -趣味や好きなこと-
-            </Text>
-          </Text>
+            </Box>
+          </Box>
         </Button>
         <Button
           onClick={() => router.push("/")}
@@ -214,12 +209,12 @@ const Home: React.FC = () => {
           _hover={{ bg: "orange.600" }}
           overflow="wrap"
         >
-          <Text p="3">
+          <Box p="3">
             Achievements & Awards
-            <Text fontSize="lg" mt="5">
+            <Box fontSize="lg" mt="5">
               -制作物・受賞歴-
-            </Text>
-          </Text>
+            </Box>
+          </Box>
         </Button>
         <Button
           onClick={() => router.push("/")}
@@ -231,12 +226,12 @@ const Home: React.FC = () => {
           color="white"
           _hover={{ bg: "orange.600" }}
         >
-          <Text p="5">
+          <Box p="5">
             History
-            <Text fontSize="lg" mt="5">
+            <Box fontSize="lg" mt="5">
               -経歴-
-            </Text>
-          </Text>
+            </Box>
+          </Box>
         </Button>
       </Box>
     </Flex>
