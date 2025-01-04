@@ -187,7 +187,7 @@ const Home: React.FC = () => {
 
         {/* ボタン */}
         <Button
-          onClick={() => router.push("/skill")}
+          onClick={() => router.push("/skills")}
           w="80%"
           h="auto"
           borderRadius="5"
