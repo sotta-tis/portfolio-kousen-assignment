@@ -42,7 +42,7 @@ const Header: React.FC = () => {
         >
           {/* ナビゲーションリンク */}
           <Flex as="nav" gap={6}>
-            {["Top", "Skill", "Achievements"].map((item) => (
+            {["Top", "Skills", "Achievements"].map((item) => (
               <Link
                 key={item}
                 href={

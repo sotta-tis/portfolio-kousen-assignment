@@ -187,7 +187,7 @@ const Home: React.FC = () => {
 
         {/* ボタン */}
         <Button
-          onClick={() => router.push("/")}
+          onClick={() => router.push("/skill")}
           w="80%"
           h="auto"
           borderRadius="5"
@@ -196,12 +196,7 @@ const Home: React.FC = () => {
           color="white"
           _hover={{ bg: "orange.600" }}
         >
-          <Box p="5">
-            History・Skill
-            <Box fontSize="lg" mt="5">
-              -経歴・できること-
-            </Box>
-          </Box>
+          <Box p="5">Skills</Box>
         </Button>
         <Button
           onClick={() => router.push("/")}
