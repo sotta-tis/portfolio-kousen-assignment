@@ -33,6 +33,8 @@ const Home: React.FC = () => {
     "javascipt",
     "typescript",
     "react",
+    "php",
+    "laravel",
     "docker",
     "c++",
     "tensorflow",
@@ -95,7 +97,7 @@ const Home: React.FC = () => {
         </Flex>
       </Flex>
 
-      {/* もっと */}
+      {/* 戻る */}
       <Box
         bg="orange.600"
         display="flex"
@@ -117,7 +119,7 @@ const Home: React.FC = () => {
           bg="rgba(255, 240, 220, 1)"
           _hover={{ bg: "rgba(255, 230, 200, 1)" }}
         >
-          <Box p="5" color="black">
+          <Box p="5" color="black" fontWeight="bold">
             Back to Top
           </Box>
         </Button>
