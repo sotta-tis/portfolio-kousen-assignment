@@ -11,6 +11,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Head>
         <title>Sota Toshizumi Portfolio</title>
         <meta name="description" content="Sota Toshziumi Portfolio" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no"
+        />
       </Head>
       <main className="flex-grow w-auto">
         <Header />

@@ -16,7 +16,7 @@ const Home: React.FC = () => {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
   const router = useRouter();
   return (
-    <Flex direction="column" w="100%" h="auto">
+    <Flex direction="column" w="auto" h="auto">
       {/* top */}
       <Box
         display="flex"
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
       >
         <Flex direction="column">
           <Text
-            mt={{ base: "20", lg: "0" }}
+            mt={{ base: "20" }}
             fontFamily={"Outfit,Lato,sans-serif"}
             textAlign="center"
             color="white"
