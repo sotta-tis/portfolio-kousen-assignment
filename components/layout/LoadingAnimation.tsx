@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const OpeningAnimation = ({ onComplete }: { onComplete: () => void }) => {
+const LoadingAnimation = ({ duration }: { duration: number }) => {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
-
-  useEffect(() => {
-    const timer = setTimeout(() => onComplete(), 2000);
-    return () => clearTimeout(timer);
-  }, [onComplete]);
 
   return (
     <motion.div
@@ -39,4 +34,4 @@ const OpeningAnimation = ({ onComplete }: { onComplete: () => void }) => {
   );
 };
 
-export default OpeningAnimation;
+export default LoadingAnimation;
