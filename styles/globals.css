@@ -9,4 +9,5 @@ body {
   background-color: #f9b959;
   color: black; /* デフォルトのテキスト色 */
   font-weight: 600;
+  overflow-x: hidden;
 }
