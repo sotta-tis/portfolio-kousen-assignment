@@ -60,9 +60,11 @@ const Home: React.FC = () => {
         </Box>
         <Box
           bg="rgba(255, 240, 220, 1)"
-          margin="10"
+          margin={{ md: "10", base: "3" }}
+          mt={{ base: "10" }}
+          mb={{ base: "10" }}
           justifyContent="center"
-          w="80%"
+          w={{ base: "auto", md: "80%" }}
           borderRadius="20px"
         >
           <Box justifyContent="center" direction="column">
@@ -88,7 +90,7 @@ const Home: React.FC = () => {
                 md: "space-around",
               }}
             >
-              <Box w="45%" m="10">
+              <Box w={{ md: "45%" }} m="10">
                 <Text color="black" fontSize="2xl">
                   期間：約半年の開発期間
                 </Text>
@@ -161,9 +163,11 @@ const Home: React.FC = () => {
         {/*　trusthub */}
         <Box
           bg="rgba(255, 240, 220, 1)"
-          margin="10"
+          margin={{ md: "10", base: "3" }}
+          mt={{ base: "10" }}
+          mb={{ base: "10" }}
           justifyContent="center"
-          w="80%"
+          w={{ base: "auto", md: "80%" }}
           borderRadius="20px"
         >
           <Box justifyContent="center" direction="column">
@@ -191,7 +195,7 @@ const Home: React.FC = () => {
               md: "sapce-betweenpace-around",
             }}
           >
-            <Box w="45%" m="10">
+            <Box w={{ md: "45%" }} m="10">
               <Text color="black" fontSize="2xl">
                 期間：1ヶ月
               </Text>
@@ -199,7 +203,13 @@ const Home: React.FC = () => {
                 約20名規模のエンジニアチームで機能の修正・新サービス開発を行なった。
               </Text>
             </Box>
-            <Flex wrap="wrap" w="30%" p={4} justifyContent="center" gap={4}>
+            <Flex
+              wrap="wrap"
+              w={{ md: "30%" }}
+              p={4}
+              justifyContent="center"
+              gap={4}
+            >
               {trust.map((src, index) => (
                 <Flex
                   key={index}
@@ -225,9 +235,10 @@ const Home: React.FC = () => {
         {/* office */}
         <Box
           bg="rgba(255, 240, 220, 1)"
-          margin="10"
+          margin={{ md: "10", base: "3" }}
+          mb={{ base: "10" }}
           justifyContent="center"
-          w="80%"
+          w={{ base: "auto", md: "80%" }}
           borderRadius="20px"
         >
           <Box justifyContent="center" direction="column">
@@ -255,7 +266,7 @@ const Home: React.FC = () => {
               md: "sapce-betweenpace-around",
             }}
           >
-            <Box w="45%" m="10">
+            <Box w={{ md: "45%" }} m="10">
               <Text color="black" fontSize="2xl">
                 期間：約1年(継続中)
               </Text>
@@ -266,7 +277,13 @@ const Home: React.FC = () => {
                 自社サイト・公開サイト・社内サービスの修正,新規開発
               </Text>
             </Box>
-            <Flex wrap="wrap" w="30%" p={4} justifyContent="center" gap={4}>
+            <Flex
+              wrap="wrap"
+              w={{ md: "30%" }}
+              p={4}
+              justifyContent="center"
+              gap={4}
+            >
               {logos.map((src, index) => (
                 <Flex
                   key={index}
@@ -293,9 +310,10 @@ const Home: React.FC = () => {
         {/* 抱月 */}
         <Box
           bg="rgba(255, 240, 220, 1)"
-          margin="10"
+          margin={{ md: "10", base: "3" }}
+          mb={{ base: "10" }}
           justifyContent="center"
-          w="80%"
+          w={{ base: "auto", md: "80%" }}
           borderRadius="20px"
         >
           <Box justifyContent="center" direction="column">
@@ -373,9 +391,9 @@ const Home: React.FC = () => {
         {/* 基礎研究 */}
         <Box
           bg="rgba(255, 240, 220, 1)"
-          margin="10"
+          margin={{ md: "10", base: "3" }}
           justifyContent="center"
-          w="80%"
+          w={{ base: "auto", md: "80%" }}
           borderRadius="20px"
         >
           <Box justifyContent="center" direction="column">
@@ -403,7 +421,7 @@ const Home: React.FC = () => {
               md: "sapce-betweenpace-around",
             }}
           >
-            <Box w="45%" m="10">
+            <Box w={{ base: "90%", md: "45%" }} m="10">
               <Text color="black" fontSize="2xl">
                 期間：約半年
               </Text>
@@ -421,7 +439,13 @@ const Home: React.FC = () => {
                 detectionの転移学習、座標の線形変換、クライアント・管理者用フロントエンド、各種ハードのapiと通信のバックエンドの実装を行なった。
               </Text>
             </Box>
-            <Flex wrap="wrap" w="30%" p={4} justifyContent="center" gap={4}>
+            <Flex
+              wrap="wrap"
+              w={{ md: "30%" }}
+              p={4}
+              justifyContent="center"
+              gap={4}
+            >
               {basic.map((src, index) => (
                 <Flex
                   key={index}

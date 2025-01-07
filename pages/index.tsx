@@ -87,9 +87,11 @@ const Home: React.FC = () => {
       >
         <Box
           bg="rgba(255, 240, 220, 1)"
-          margin="10"
+          margin={{ md: "10", base: "3" }}
+          mt={{ base: "10" }}
+          mb={{ base: "10" }}
           justifyContent="center"
-          w="80%"
+          w={{ base: "auto", md: "80%" }}
           borderRadius="50px"
         >
           {/* タイトル */}
